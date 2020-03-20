@@ -5,6 +5,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .container {
@@ -81,14 +82,106 @@
 
 .animation a {
     transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
 }
 
 .animation:hover a {
     transform-origin: top;
     animation: swing 1.5s ease-in-out;
+    -webkit-animation: swing 1.5s ease-in-out;
+    -moz-animation: swing 1.5s ease-in-out;
+    -ms-animation: swing 1.5s ease-in-out;
+    -o-animation: swing 1.5s ease-in-out;
 }
 
 @keyframes swing {
+    0% {
+        transform: rotateX(-50deg);
+    }
+    20% {
+        transform: rotateX(50deg);
+    }
+    40% {
+        transform: rotateX(-30deg);
+    }
+    60% {
+        transform: rotateX(30deg);
+    }
+    80% {
+        transform: rotateX(-30deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@-webkit-keyframes swing {
+    0% {
+        transform: rotateX(-50deg);
+    }
+    20% {
+        transform: rotateX(50deg);
+    }
+    40% {
+        transform: rotateX(-30deg);
+    }
+    60% {
+        transform: rotateX(30deg);
+    }
+    80% {
+        transform: rotateX(-30deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@-moz-keyframes swing {
+    0% {
+        transform: rotateX(-50deg);
+    }
+    20% {
+        transform: rotateX(50deg);
+    }
+    40% {
+        transform: rotateX(-30deg);
+    }
+    60% {
+        transform: rotateX(30deg);
+    }
+    80% {
+        transform: rotateX(-30deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@-o-keyframes swing {
+    0% {
+        transform: rotateX(-50deg);
+    }
+    20% {
+        transform: rotateX(50deg);
+    }
+    40% {
+        transform: rotateX(-30deg);
+    }
+    60% {
+        transform: rotateX(30deg);
+    }
+    80% {
+        transform: rotateX(-30deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@-moz-keyframes swing {
     0% {
         transform: rotateX(-50deg);
     }
